@@ -50,7 +50,7 @@
     padding-right: 10px;
 }
 
-#navbar >ul{
+#navbar > ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -192,4 +192,61 @@
     order: 1;
     margin-right: 20px;
     color: #444;
+}
+
+@media (max-width:1278px) {
+    #header{
+        text-align: center;
+    }
+
+    .logo{
+        flex-basis: 100%;
+    }
+
+    #navbar > ul{
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:534px){
+    
+    .wrap{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #aside{
+        margin: 0px;
+    }
+
+    #aside ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #aside ul li{
+        flex-grow: 1;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .project{
+        margin: 0px;
+        border: 1px solid #ccc;
+        /* Para que queden 2 por linea */
+        /* flex-basis: 40%;
+        margin: 10px; */
+        margin:10px;
+    }
+
+    #footer .logo,#footer .info{
+        margin: 0px;
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }

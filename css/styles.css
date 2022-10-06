@@ -33,7 +33,7 @@
     margin-left: 20px;
 }
 
-.logo h1{
+.logo h1, .logo p{
     font-family: Helvetica;
     font-style: italic;
     font-weight: 900;
@@ -166,4 +166,30 @@
 #aside a:hover{
     background-color: #444;
     color: #eee;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 140px;
+    border-top: 1px solid rgba(225,225,226,0.8);
+}
+
+#footer .logo{
+    opacity: 0.5;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#footer .info{
+    flex-grow: 1;
+    order: 1;
+    margin-right: 20px;
+    color: #444;
 }

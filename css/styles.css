@@ -18,17 +18,11 @@
 }
 
 #header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     height: 156px;
     border-bottom: 1px solid rgba(225,225,226,0.8);
 }
 
 .logo{
-    flex-grow: 1;
-    flex-basis: 65%;
     padding: 10px;
     margin-left: 20px;
 }
@@ -44,18 +38,11 @@
 }
 
 #navbar{
-    flex-grow: 1;
-    flex-basis: 30%;
     height: 100%;
     padding-right: 10px;
 }
 
 #navbar > ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
     height: 100%;
 }
 
@@ -76,23 +63,15 @@
 }
 
 .wrap{
-    display: flex;
-    justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #projects{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-basis: 80%;
+
 }
 
 .project{
-    flex-grow: 1;
-    flex-basis: 250px;
     margin-bottom: 25px;
     margin-right: 20px;
     border: 1px solid #ccc;
@@ -125,10 +104,6 @@
 }
 
 #aside{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-basis: 15%;
     margin-right: 30px;
     padding: 15px;
 }
@@ -169,27 +144,17 @@
 }
 
 #footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
     height: 140px;
     border-top: 1px solid rgba(225,225,226,0.8);
 }
 
 #footer .logo{
     opacity: 0.5;
-    flex-basis: auto;
-    flex-grow: 1;
-    order: 2;
     text-align: right;
     margin-right: 20px;
 }
 
 #footer .info{
-    flex-grow: 1;
-    order: 1;
     margin-right: 20px;
     color: #444;
 }
@@ -200,12 +165,11 @@
     }
 
     .logo{
-        flex-basis: 100%;
+
     }
 
     #navbar > ul{
-        align-items: flex-start;
-        justify-content: space-evenly;
+
         margin-top: 20px;
     }
 }
@@ -213,8 +177,7 @@
 @media (max-width:534px){
     
     .wrap{
-        flex-direction: column;
-        flex-wrap: wrap;
+
     }
 
     #aside{
@@ -222,13 +185,10 @@
     }
 
     #aside ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+
     }
 
     #aside ul li{
-        flex-grow: 1;
         margin-left: 5px;
         margin-right: 5px;
     }
@@ -244,7 +204,6 @@
 
     #footer .logo,#footer .info{
         margin: 0px;
-        flex-basis: 100%;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 10px;

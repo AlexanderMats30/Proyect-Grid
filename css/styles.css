@@ -18,7 +18,11 @@
 }
 
 #header{
-    height: 156px;
+    display:grid;
+    grid-template-columns: 68% 30%;
+    align-items: center;
+    width: 100%;
+    height: 120px;
     border-bottom: 1px solid rgba(225,225,226,0.8);
 }
 
@@ -38,11 +42,17 @@
 }
 
 #navbar{
+    width: 100%;
     height: 100%;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 #navbar > ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     height: 100%;
 }
 
@@ -63,12 +73,21 @@
 }
 
 .wrap{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    align-items: center;
+    justify-items: space-between;
+    column-gap: 7px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 #projects{
-
+    display: grid;
+    /* Auto Fill me agrega columnas segun la cantidad de elementos necesarios */
+    grid-template-columns: repeat(auto-fill,255px);
+    gap: 16.5px;
+    align-items: start;
 }
 
 .project{
@@ -144,68 +163,21 @@
 }
 
 #footer{
-    height: 140px;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+    align-items: center;
+    justify-content: start;
+    height: 120px;
     border-top: 1px solid rgba(225,225,226,0.8);
 }
 
 #footer .logo{
     opacity: 0.5;
-    text-align: right;
+    text-align: left;
     margin-right: 20px;
 }
 
 #footer .info{
     margin-right: 20px;
     color: #444;
-}
-
-@media (max-width:1278px) {
-    #header{
-        text-align: center;
-    }
-
-    .logo{
-
-    }
-
-    #navbar > ul{
-
-        margin-top: 20px;
-    }
-}
-
-@media (max-width:534px){
-    
-    .wrap{
-
-    }
-
-    #aside{
-        margin: 0px;
-    }
-
-    #aside ul{
-
-    }
-
-    #aside ul li{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .project{
-        margin: 0px;
-        border: 1px solid #ccc;
-        /* Para que queden 2 por linea */
-        /* flex-basis: 40%;
-        margin: 10px; */
-        margin:10px;
-    }
-
-    #footer .logo,#footer .info{
-        margin: 0px;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
 }
